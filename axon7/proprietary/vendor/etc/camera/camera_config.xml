@@ -84,14 +84,13 @@ LensInfo : Information of the lens present in the module.
 -->
 
 <CameraConfigurationRoot>
-    <CameraModuleConfig>
+  <CameraModuleConfig>
     <CameraId>0</CameraId>
-    <SensorName>s5k2t8</SensorName>
-    <ActuatorName>ak7371</ActuatorName>
-    <EepromName>common_s5k2t8</EepromName>
-    <OisName>bu63165</OisName>
+    <SensorName>imx350_docomo_virtual</SensorName>
+    <ActuatorName>bu64297_imx350_docomo</ActuatorName>
+    <EepromName>sony_imx350_docomo</EepromName>
     <FlashName>pmic</FlashName>
-    <ChromatixName>s5k2t8_chromatix</ChromatixName>
+    <ChromatixName>imx350_docomo_virtual_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK</Position>
     <MountAngle>90</MountAngle>
@@ -102,7 +101,7 @@ LensInfo : Information of the lens present in the module.
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>4.216</FocalLength>
+      <FocalLength>3.89</FocalLength>
       <FNumber>1.8</FNumber>
       <TotalFocusDistance>1.97</TotalFocusDistance>
       <HorizontalViewAngle>75</HorizontalViewAngle>
@@ -110,23 +109,25 @@ LensInfo : Information of the lens present in the module.
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
-    <CameraModuleConfig>
-    <CameraId>2</CameraId>
-    <SensorName>ov8856</SensorName>
-    <EepromName>common_ov8856</EepromName>
-    <ChromatixName>ov8856_chromatix</ChromatixName>
+<CameraModuleConfig>
+    <CameraId>1</CameraId>
+    <SensorName>imx350_docomo_front</SensorName>
+    <ActuatorName>bu64297_imx350_docomo</ActuatorName>
+    <EepromName>sony_imx350_docomo</EepromName>
+    <FlashName>pmic</FlashName>
+    <ChromatixName>imx350_docomo_front_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>FRONT</Position>
     <MountAngle>270</MountAngle>
     <CSIInfo>
-      <CSIDCore>2</CSIDCore>
-      <LaneMask>0x07</LaneMask>
+      <CSIDCore>0</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
       <LaneAssign>0x4320</LaneAssign>
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>2.48</FocalLength>
-      <FNumber>2.2</FNumber>
+      <FocalLength>3.89</FocalLength>
+      <FNumber>1.8</FNumber>
       <TotalFocusDistance>1.97</TotalFocusDistance>
       <HorizontalViewAngle>75</HorizontalViewAngle>
       <VerticalViewAngle>60</VerticalViewAngle>

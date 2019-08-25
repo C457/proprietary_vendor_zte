@@ -1,0 +1,185 @@
+<!--
+  Copyright (c) 2015 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!--
+RegularChromatixInfo:
+    RegularChromatixInfo is the information about chromtix needed for
+    various sensor modes. Preview, Snapshot, ZSL, HFR, HDR, Video, Liveshot
+    are in this category.
+
+ChromatixName:
+    Contains the list of chromatix names for all sub modules for a given mode.
+    Number of ChromatixName nodes must match with the number of modes in sensor.
+
+ISPCommon :
+    Common tuning library name for ISP
+ISPPreview :
+    Preview tuning library name for ISP
+ISPSnapshot :
+    Snapshot tuning library name for ISP
+ISPLiveshot :
+    Liveshot tuning library name for ISP
+CPPCommon :
+    Common tuning library name for CPP
+CPPPreview :
+    Preview tuning library name for CPP
+CPPSnapshot :
+    Snapshot tuning library name for CPP
+CPPLiveshot :
+    Liveshot tuning library name for CPP
+CPPFlashSnapshot :
+    Flash snapshot tuning library for CPP
+CPPDownScale :
+    Down scale tuning library for CPP
+CPPUpScale :
+    Up scale tuning library for CPP
+PostProc :
+    Tuning library name for postproc module
+A3Preview :
+    Preview tuning library for 3A
+A3Video :
+    Video tuning library for 3A
+
+-->
+<ChromatixConfigurationRoot>
+  <CommonChromatixInfo>
+    <ChromatixName>
+      <ISPCommon>imx350_docomo_vf_common</ISPCommon>
+      <PostProc>imx350_docomo_vf_postproc</PostProc>
+    </ChromatixName>
+    <ChromatixName special_mode_mask = "ZOOM_UPSCALE">
+      <CPPSnapshot>imx350_docomo_vf_cpp_snapshot_upscale</CPPSnapshot>
+    </ChromatixName>
+    <ChromatixName special_mode_mask = "ZOOM_DOWNSCALE">
+      <CPPSnapshot>imx350_docomo_vf_cpp_snapshot_downscale</CPPSnapshot>
+    </ChromatixName>
+    <ChromatixName special_mode_mask = "ZTE_CPP">
+      <CPPSnapshot>imx350_docomo_vf_cpp_snapshot_night_vd</CPPSnapshot>
+    </ChromatixName>
+  </CommonChromatixInfo>
+  <!--
+ full size
+  -->
+  <ResolutionChromatixInfo>
+    <ChromatixName sensor_resolution_index="0">
+      <ISPPreview>imx350_docomo_vf_isp_snapshot</ISPPreview>
+      <ISPSnapshot>imx350_docomo_vf_isp_snapshot</ISPSnapshot>
+      <ISPVideo>imx350_docomo_vf_isp_4k_video</ISPVideo>
+      <CPPPreview>imx350_docomo_vf_cpp_preview</CPPPreview>
+      <CPPSnapshot>imx350_docomo_vf_cpp_snapshot</CPPSnapshot>
+      <CPPVideo>imx350_docomo_vf_cpp_video</CPPVideo>
+      <CPPLiveshot>imx350_docomo_vf_cpp_liveshot</CPPLiveshot>
+      <A3Preview>imx350_docomo_vf_zsl_preview</A3Preview>
+      <A3Video>imx350_docomo_vf_zsl_video</A3Video>
+    </ChromatixName>
+  <!--
+ 1/4 size
+  -->
+    <ChromatixName sensor_resolution_index="1">
+      <ISPPreview>imx350_docomo_vf_isp_snapshot</ISPPreview>
+      <ISPSnapshot>imx350_docomo_vf_isp_snapshot</ISPSnapshot>
+      <ISPVideo>imx350_docomo_vf_isp_video</ISPVideo>
+      <CPPPreview>imx350_docomo_vf_cpp_preview</CPPPreview>
+      <CPPSnapshot>imx350_docomo_vf_cpp_snapshot</CPPSnapshot>
+      <CPPVideo>imx350_docomo_vf_cpp_video</CPPVideo>
+      <CPPLiveshot>imx350_docomo_vf_cpp_liveshot</CPPLiveshot>
+      <A3Preview>imx350_docomo_vf_default_preview</A3Preview>
+      <A3Video>imx350_docomo_vf_default_video</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="2">
+      <ISPPreview>imx350_docomo_vf_isp_hfr_60</ISPPreview>
+      <ISPSnapshot>imx350_docomo_vf_isp_hfr_60</ISPSnapshot>
+      <ISPVideo>imx350_docomo_vf_isp_hfr_60</ISPVideo>
+      <ISPLiveshot>imx350_docomo_vf_isp_hfr_60</ISPLiveshot>
+      <CPPPreview>imx350_docomo_vf_cpp_hfr_60</CPPPreview>
+      <CPPSnapshot>imx350_docomo_vf_cpp_hfr_60</CPPSnapshot>
+      <CPPVideo>imx350_docomo_vf_cpp_hfr_60</CPPVideo>
+      <CPPLiveshot>imx350_docomo_vf_cpp_hfr_60</CPPLiveshot>
+      <A3Preview>imx350_docomo_vf_3a_hfr_60</A3Preview>
+      <A3Video>imx350_docomo_vf_3a_hfr_60</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="3">
+      <ISPPreview>imx350_docomo_vf_isp_hfr_120</ISPPreview>
+      <ISPSnapshot>imx350_docomo_vf_isp_hfr_120</ISPSnapshot>
+      <ISPVideo>imx350_docomo_vf_isp_hfr_120</ISPVideo>
+      <ISPLiveshot>imx350_docomo_vf_isp_hfr_120</ISPLiveshot>
+      <CPPPreview>imx350_docomo_vf_cpp_hfr_120</CPPPreview>
+      <CPPSnapshot>imx350_docomo_vf_cpp_hfr_120</CPPSnapshot>
+      <CPPVideo>imx350_docomo_vf_cpp_hfr_120</CPPVideo>
+      <CPPLiveshot>imx350_docomo_vf_cpp_hfr_120</CPPLiveshot>
+      <A3Preview>imx350_docomo_vf_3a_hfr_120</A3Preview>
+      <A3Video>imx350_docomo_vf_3a_hfr_120</A3Video>
+    </ChromatixName>
+      <ChromatixName sensor_resolution_index="4">
+      <ISPPreview>imx350_docomo_vf_isp_hfr_240</ISPPreview>
+      <ISPSnapshot>imx350_docomo_vf_isp_hfr_240</ISPSnapshot>
+      <ISPVideo>imx350_docomo_vf_isp_hfr_240</ISPVideo>
+      <ISPLiveshot>imx350_docomo_vf_isp_hfr_240</ISPLiveshot>
+      <CPPPreview>imx350_docomo_vf_cpp_hfr_240</CPPPreview>
+      <CPPSnapshot>imx350_docomo_vf_cpp_hfr_240</CPPSnapshot>
+      <CPPVideo>imx350_docomo_vf_cpp_hfr_240</CPPVideo>
+      <CPPLiveshot>imx350_docomo_vf_cpp_hfr_240</CPPLiveshot>
+      <A3Preview>imx350_docomo_vf_3a_hfr_240</A3Preview>
+      <A3Video>imx350_docomo_vf_3a_hfr_240</A3Video>
+    </ChromatixName>
+      <ChromatixName sensor_resolution_index="5">
+      <ISPPreview>imx350_docomo_vf_isp_hfr_300</ISPPreview>
+      <ISPSnapshot>imx350_docomo_vf_isp_hfr_300</ISPSnapshot>
+      <ISPVideo>imx350_docomo_vf_isp_hfr_300</ISPVideo>
+      <ISPLiveshot>imx350_docomo_vf_isp_hfr_300</ISPLiveshot>
+      <CPPPreview>imx350_docomo_vf_cpp_hfr_300</CPPPreview>
+      <CPPSnapshot>imx350_docomo_vf_cpp_hfr_300</CPPSnapshot>
+      <CPPVideo>imx350_docomo_vf_cpp_hfr_300</CPPVideo>
+      <CPPLiveshot>imx350_docomo_vf_cpp_hfr_300</CPPLiveshot>
+      <A3Preview>imx350_docomo_vf_3a_hfr_300</A3Preview>
+      <A3Video>imx350_docomo_vf_3a_hfr_300</A3Video>
+    </ChromatixName>
+  <!--
+ 4k size
+  -->
+    <ChromatixName sensor_resolution_index="6">
+      <ISPPreview>imx350_docomo_vf_isp_4k_snapshot</ISPPreview>
+      <ISPSnapshot>imx350_docomo_vf_isp_4k_snapshot</ISPSnapshot>
+      <ISPVideo>imx350_docomo_vf_isp_4k_video</ISPVideo>
+      <CPPPreview>imx350_docomo_vf_cpp_4k_preview</CPPPreview>
+      <CPPSnapshot>imx350_docomo_vf_cpp_4k_snapshot</CPPSnapshot>
+      <CPPVideo>imx350_docomo_vf_cpp_4k_video</CPPVideo>
+      <CPPLiveshot>imx350_docomo_vf_cpp_4k_liveshot</CPPLiveshot>
+      <A3Preview>imx350_docomo_vf_3a_4k_preview</A3Preview>
+      <A3Video>imx350_docomo_vf_3a_4k_video</A3Video>
+    </ChromatixName>
+  <!--
+ 1080P size
+  -->
+  <!--disable 1080P
+    <ChromatixName sensor_resolution_index="7">
+      <ISPPreview>imx350_docomo_vf_isp_1080p_snapshot</ISPPreview>
+      <ISPSnapshot>imx350_docomo_vf_isp_1080p_snapshot</ISPSnapshot>
+      <ISPVideo>imx350_docomo_vf_isp_1080p_video</ISPVideo>
+      <CPPPreview>imx350_docomo_vf_cpp_1080p_preview</CPPPreview>
+      <CPPSnapshot>imx350_docomo_vf_cpp_1080p_snapshot</CPPSnapshot>
+      <CPPVideo>imx350_docomo_vf_cpp_1080p_video</CPPVideo>
+      <CPPLiveshot>imx350_docomo_vf_cpp_1080p_liveshot</CPPLiveshot>
+      <A3Preview>imx350_docomo_vf_3a_1080p_preview</A3Preview>
+      <A3Video>imx350_docomo_vf_3a_1080p_video</A3Video>
+    </ChromatixName> -->
+  <!--
+ small size(vga)
+  -->
+    <ChromatixName sensor_resolution_index="7">
+      <ISPPreview>imx350_docomo_vf_isp_vga_snapshot</ISPPreview>
+      <ISPSnapshot>imx350_docomo_vf_isp_vga_snapshot</ISPSnapshot>
+      <ISPVideo>imx350_docomo_vf_isp_vga_video</ISPVideo>
+      <CPPPreview>imx350_docomo_vf_cpp_vga_preview</CPPPreview>
+      <CPPSnapshot>imx350_docomo_vf_cpp_vga_snapshot</CPPSnapshot>
+      <CPPVideo>imx350_docomo_vf_cpp_vga_video</CPPVideo>
+      <CPPLiveshot>imx350_docomo_vf_cpp_vga_liveshot</CPPLiveshot>
+      <A3Preview>imx350_docomo_vf_default_preview</A3Preview>
+      <A3Video>imx350_docomo_vf_default_video</A3Video>
+    </ChromatixName>
+  <!-- virtual sensor resolution chromatix end-->
+  </ResolutionChromatixInfo>
+</ChromatixConfigurationRoot>
