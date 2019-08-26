@@ -5,7 +5,7 @@ on boot
     chmod 0200 /sys/bus/platform/devices/soc:fpc1020/wakeup_enable
     chown system system /sys/bus/platform/devices/soc:fpc1020/wakeup_enable
 
-service fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+service fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.fujisan
     # "class hal" causes a race condition on some devices due to files created
     # in /data. As a workaround, postpone startup until later in boot once
     # /data is mounted.

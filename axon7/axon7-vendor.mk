@@ -100,6 +100,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/axon7/proprietary/vendor/firmware/cpp_firmware_v1_5_2.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_2.fw \
     vendor/zte/axon7/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
     vendor/zte/axon7/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/zte/axon7/proprietary/vendor/lib/com.fingerprints.extension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.fingerprints.extension@1.0.so \
     vendor/zte/axon7/proprietary/vendor/lib/hw/camera.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8996.so \
     vendor/zte/axon7/proprietary/vendor/lib/hw/lights.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/lights.msm8996.so \
     vendor/zte/axon7/proprietary/vendor/lib/libFNVfbEngineHAL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFNVfbEngineHAL.so \
@@ -362,6 +363,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/axon7/proprietary/vendor/lib/libtsvideoprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtsvideoprocess.so \
     vendor/zte/axon7/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
     vendor/zte/axon7/proprietary/vendor/lib/sensors.hallSensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.hallSensor.so \
+    vendor/zte/axon7/proprietary/vendor/lib64/com.fingerprints.extension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.fingerprints.extension@1.0.so \
     vendor/zte/axon7/proprietary/vendor/lib64/hw/lights.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/lights.msm8996.so \
     vendor/zte/axon7/proprietary/vendor/lib64/sensors.hallSensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.hallSensor.so
 
