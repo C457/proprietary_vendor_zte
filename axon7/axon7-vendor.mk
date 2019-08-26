@@ -57,6 +57,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/axon7/proprietary/vendor/firmware/ak4962_pram_wide.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ak4962_pram_wide.bin \
     vendor/zte/axon7/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/zte/axon7/proprietary/vendor/lib/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrueportrait.so \
+    vendor/zte/axon7/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.fujisan:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.fujisan \
     vendor/zte/axon7/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/zte/axon7/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/zte/axon7/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_General_cal.acdb \
@@ -73,6 +74,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/axon7/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
     vendor/zte/axon7/proprietary/vendor/etc/camera/imx350_docomo_front_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx350_docomo_front_chromatix.xml \
     vendor/zte/axon7/proprietary/vendor/etc/camera/imx350_docomo_virtual_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx350_docomo_virtual_chromatix.xml \
+    vendor/zte/axon7/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.fujisan.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.fujisan.rc \
     vendor/zte/axon7/proprietary/vendor/etc/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
     vendor/zte/axon7/proprietary/vendor/firmware/a530_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_gpmu.fw2 \
     vendor/zte/axon7/proprietary/vendor/firmware/a530_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pfp.fw \
@@ -103,6 +105,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/axon7/proprietary/vendor/lib/libFNVfbEngineHAL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFNVfbEngineHAL.so \
     vendor/zte/axon7/proprietary/vendor/lib/libImgFvDetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libImgFvDetect.so \
     vendor/zte/axon7/proprietary/vendor/lib/libImgmovie_solid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libImgmovie_solid.so \
+    vendor/zte/axon7/proprietary/vendor/lib/libVDBlurlessAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDBlurlessAPI.so \
     vendor/zte/axon7/proprietary/vendor/lib/libZEffectLib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libZEffectLib.so \
     vendor/zte/axon7/proprietary/vendor/lib/libactuator_bu64297_imx350_docomo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_bu64297_imx350_docomo.so \
     vendor/zte/axon7/proprietary/vendor/lib/libactuator_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_interface.so \
@@ -358,7 +361,9 @@ PRODUCT_COPY_FILES += \
     vendor/zte/axon7/proprietary/vendor/lib/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libseemore.so \
     vendor/zte/axon7/proprietary/vendor/lib/libtsvideoprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtsvideoprocess.so \
     vendor/zte/axon7/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
-    vendor/zte/axon7/proprietary/vendor/lib64/hw/lights.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/lights.msm8996.so
+    vendor/zte/axon7/proprietary/vendor/lib/sensors.hallSensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.hallSensor.so \
+    vendor/zte/axon7/proprietary/vendor/lib64/hw/lights.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/lights.msm8996.so \
+    vendor/zte/axon7/proprietary/vendor/lib64/sensors.hallSensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.hallSensor.so
 
 ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
